@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = "RegistrationMGMT";
+    Layout = "~/Views/Shared/AdminMasterPage.cshtml";
+}
+
+
+@model List <e_comm.Content.Models.TBL_Reg>
+<div class="row" style="background:linear-gradient(white,pink);">
+    <table class="table table-bordered">
+    <tr>
+        <th>Reg Id</th>
+        <th>Email </th>
+        <th>Password</th>
+        <th>Address</th>
+        <th>city</th>
+        <th>State</th>
+        <th>Pin Code</th>
+        <th>Profile</th>
+        <th>Reg Date & Time</th>
+        <th>Delete</th>
+         <th>update</th>
+    </tr> 
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem=>item.Reg_Id)</td>
+            <td>@Html.DisplayFor(modelItem=>item.Email)</td>
+            <td>@Html.DisplayFor(modelItem=>item.Password)</td>
+            <td>@Html.DisplayFor(modelItem=>item.Address)</td>
+            <td>@Html.DisplayFor(modelItem=>item.city)</td>
+            <td>@Html.DisplayFor(modelItem=>item.State)</td>
+            <td>@Html.DisplayFor(modelItem=>item.Pin)</td>
+            <td><img src="../Content/Profile/@Html.DisplayFor(modelItem=>item.Profile)" height="150" width="150" style="border-radius:50%;"/></td>
+            <td>@Html.DisplayFor(modelItem=>item.RegDate)</td>
+            <td><a href="/AdminZone/Delete?m=@item.Email"><span class="fa fa-trash" style="color:red;font-size:50px;"></span></a></td>
+            <td>
+                <a href="/AdminZone/RecordUpdate?u=@item.Email"><span class="fa fa-edit" style="color:green;font-size:40px;"></span></a>
+
+            </td>
+        </tr>
+    }
+</table>
+    </div>

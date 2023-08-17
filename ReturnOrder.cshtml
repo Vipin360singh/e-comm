@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "ReturnOrder";
+    Layout = "~/Views/Shared/HomeMasterPage.cshtml";
+}
+
+<h2 style="height:100px;">o</h2>
+
+
+<div class="row" data-aos="fade-right" style="background:black;border-radius:16px;box-shadow:6px 6px 3px red;">
+    <div class="col-md-2"></div>
+    <div class="col-md-4">
+        <h1 class="text-right" style="color:white;"><span style="color:red;">R</span>eturn</h1>
+        <form  Action="/Home/ReturnOrder" method="post" enctype="multipart/form-data">
+            <div class="form-row" style="color:white;">
+                <div class="form-group col-md-2"></div>
+                <div class="form-group col-md-8"><br /><br />
+                    <label for="inputEmail3"><span style="color:red">O</span>rder <span style="color:red;">I</span>D / <span style="color:red;">T</span>ransation <span style="color:red;">I</span>D </label>
+      <input class="form-control" name="OrderId" placeholder="1222528743 / 87787HHHphonepay" /><br /><br />
+                    <label for="inputEmail3"><span style="color:red">R</span>eturn <span style="color:red;">T</span>o <span style="color:red;">N</span>ext <span style="color:red">O</span>rder <span style="color:red;">I</span>D / <span style="color:red;">T</span>ransation <span style="color:red;">I</span>D </label>
+      <input class="form-control" name="Return_To" placeholder="1222528743 / 87787HHHphonepay" /><br /><br />
+                    <label for="inputEmail4"><span style="color:red">E</span>mail</label>
+      <input type="email" name="Email" class="form-control" id="inputEmail4" placeholder="Email"><br /><br />
+                  <center>  <button type="submit" class="btn" style="box-shadow:2px 2px 2px red;border:1px solid blue;background: black;color:white;"><span style="color:red">S</span>ubmit</button></center><br /><br /><br />
+                    
+                    <u><a href="#" style="color:white;">Our Return Policy</a></u>
+
+                </div>
+                <div class="form-group col-md-2"></div>
+            </div>
+        </form>
+    </div>
+    <div class="col-md-4" style="background:black">
+         <h1 class="text-left" style="color:white;"><span style="color:red;">O</span>rder </h1>
+        <img src="/Content/images/gal2.jpg" width="100%" />
+    </div><br />
+    <div class="col-md-2"></div><
+</div><br /><br />

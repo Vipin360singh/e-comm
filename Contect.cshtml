@@ -1,0 +1,52 @@
+﻿@{
+    ViewBag.Title = "Contect";
+    Layout = "~/Views/Shared/HomeMasterPage.cshtml";
+}
+
+<h2 style="min-height:100px;">o</h2>
+
+    <div class="row" data-aos="fade-right">
+    
+        <div class="col-md-1"></div>
+        <div class="col-md-6" style="background:black;margin-bottom:20px; border-radius:16px;
+  box-shadow:6px 6px 3px red;"><br />
+            <div class="card"style="background:black;">
+                 <h2 class="text-center text-white"><span style="color:red;">C</span>ontect</h2>
+                <div class="card-body">
+                    <form action="/Home/Contect" method="post">
+                        <div class="form-group">
+                            <label for="name" style="color:white;"><span style="color:red;">N</span>ame</label>
+                            <input type="text" class="form-control" required name="Name" aria-describedby="emailHelp" placeholder="Enter name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email"style="color:white;"><span style="color:red;">E</span>mail address</label>
+                            <input type="email" class="form-control" required name="Email" aria-describedby="emailHelp" placeholder="Enter email" required>
+                            
+                        </div>
+                        <div class="form-group">
+                            <label for="no"style="color:white;"><span style="color:red;">M</span>obile</label>
+                            <input type="tel" class="form-control" required name="Mobile" aria-describedby="emailHelp" placeholder="9878976744" required>
+                            
+                        </div>
+                        <div class="form-group">
+                            <label for="message"style="color:white;"><span style="color:red;">M</span>essage</label>
+                            <textarea class="form-control" name="Mesg" required placeholder="message..."></textarea>
+                        </div>
+                       <button type="submit" class="btn" style="box-shadow:2px 2px 2px red;border:1px solid blue;background: black;color:white;"><span style="color:red">S</span>ubmit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card bg-dark mb-3 text-white">
+                <div class="card-header bg-success text-white text-uppercase"><i class="fa fa-home"></i> Address</div>
+                <div class="card-body">
+                    <p>333 no. Mirzapur</p>
+                    <p>231001 Utter Pradesh</p>
+                    <p>Email : singh360@gmail.com</p>
+                    <p>Tel. +91 9621316040</p>
+                    <iframe style="min-height:300px;width:100%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57788.287685014344!2d82.51645900314904!3d25.1435338832815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398fc1ca0ad8cfb5%3A0xd0218588b2986e11!2sMirzapur%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1661553799338!5m2!1sen!2sin"></iframe>
+                </div>
+         </div>
+        </div>
+    </div>

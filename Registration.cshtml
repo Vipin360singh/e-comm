@@ -1,0 +1,100 @@
+﻿@{
+    ViewBag.Title = "Registration";
+    Layout = "~/Views/Shared/HomeMasterPage.cshtml";
+}
+<h1 style="height:100px;">0</h1>
+@*<script>
+    function getCaptcha() {
+        var strArr = "1234567890slnvlakfnlkasjfkljlJLNHVDS";
+        var code = "";
+        for (var i = 0; i < 5; i++) {
+            code=code+strArr[Math.floor(Math.random()*20)]
+        }
+        return code;
+    }
+    function demo() {
+        var c = getCaptcha();
+        document.getElementById("ct1").innerHTML = c;
+        document.getElementById("hdn1").value = c;
+    }
+</script>*@
+
+
+
+<div class="row" data-aos="fade-right" style="background:black;color:white;margin:0px; border-radius:16px;box-shadow:6px 6px 3px red;">
+    <div class="col-md-12 text-center">
+<h1 ><span style="color:red">R</span>egistration</h1>
+        </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-10" >
+<form  style="background:black;" Action="/Home/Registration" method="post" enctype="multipart/form-data">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+        <br />
+      <label for="inputEmail4"><span style="color:red">E</span>mail</label>
+      <input type="email" class="form-control" required id="inputEmail4" name="Email" placeholder="Email">
+    </div>
+    <div class="form-group col-md-6">
+        <br />
+      <label for="inputPassword4"><span style="color:red">P</span>assword</label>
+      <input type="password" class="form-control" required name="Password" id="inputPassword4" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress"><span style="color:red">A</span>ddress</label>
+    <input type="text" class="form-control" required name="Address" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity"><span style="color:red">C</span>ity</label>
+      <input type="text" name="city" required class="form-control" id="inputCity">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState"><span style="color:red">S</span>tate</label>
+      <select id="inputState"  name="State" class="form-control" required>
+        <option  selected>Select..</option>
+        <option  >Utter Pradesh</option>
+          <option  >New Delhi</option>
+          <option>New York</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip"><span style="color:red">P</span>in Code</label>
+      <input type="text" class="form-control" required name="Pin" id="inputZip">
+    </div>
+  </div>
+    <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputfile"><span style="color:red">P</span>rofile</label>
+      <input type="file" class="form-control" required name="Profile" id="inputfile">
+        </div>
+        
+    </div>
+      @* <div class="form-row">
+  <div class="form-group col-md-4">
+      Captcha Code &nbsp; &nbsp;&nbsp;&nbsp;<span style="color:red;font-size:25px;"><strike id="ct1">asv4a</strike></span>&nbsp;
+        <span class="fa fa-refresh" style="color:blue;font-size:25px;cursor:pointer;" onclick="demo()"></span><br />
+          <input type="hidden" id="hdn1" name="hdn1"/>
+        <input type="text" name="ct1" class="form-control" placeholder="captcha"/>
+           </div>
+           <div class="form-group col-md-8"></div>
+      </div>*@
+    
+    <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" required type="checkbox"  id="gridCheck">&nbsp;
+      <label class="form-check-label" for="gridCheck">
+        I am agree to register here.
+      </label>
+    </div>
+  </div>
+
+  <button type="submit" class="btn" style="box-shadow:2px 2px 2px red;border:1px solid blue;background: black;color:white;"><span style="color:red">R</span>egister</button>
+
+    
+</form><br />
+        </div>
+    <div class="col-md-1"></div>
+    </div>
+<br /><br />

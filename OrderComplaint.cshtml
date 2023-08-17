@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "OrderComplaint";
+    Layout = "~/Views/Shared/HomeMasterPage.cshtml";
+}
+
+
+<h2 style="height:100px;">o</h2>
+
+<div class="row" data-aos="fade-right" style="background:black;border-radius:16px;box-shadow:6px 6px 3px red;">
+    <div class="col-md-2"></div>
+    <div class="col-md-4">
+        <h1 class="text-right" style="color:white;"><span style="color:red">O</span>rder </h1>
+        <form  Action="/Home/OrderComplaint" method="post" enctype="multipart/form-data">
+            <div class="form-row" style="color:white;">
+                <div class="form-group col-md-2"></div>
+                <div class="form-group col-md-8"><br /><br />
+                    <label for="inputEmail3"><span style="color:red">O</span>rder <span style="color:red;">I</span>D / <span style="color:red;">T</span>ransation <span style="color:red;">I</span>D </label>
+      <input class="form-control" name="OrderId" placeholder="1222528743 / 87787HHHphonepay" /><br /><br />
+                    <label for="inputEmail4"><span style="color:red">Y</span>our <span style="color:red">C</span>omplaint </label>
+                    <textarea class="form-control" name="Complain"  id="area" required></textarea>
+                    <br /><br />
+                  <center>  <button type="submit" class="btn" style="box-shadow:2px 2px 2px red;border:1px solid blue;background: black;color:white;"><span style="color:red">S</span>ubmit</button></center><br /><br /><br />
+                    <p>We will try to solve your problem quickly.</p>
+
+                </div>
+                <div class="form-group col-md-2"></div>
+            </div>
+        </form>
+    </div>
+    <div class="col-md-4" style="background:black">
+         <h1 class="text-left" style="color:white;"><span style="color:red;">C</span>omplaint </h1>
+        <img src="/Content/images/gal6.jpg" width="100%" />
+    </div><br />
+    <div class="col-md-2"></div>
+</div><br /><br />

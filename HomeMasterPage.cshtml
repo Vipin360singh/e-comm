@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <link href="~/Content/ProjectStyleDemo.css" rel="stylesheet" />
+    <link href="~/Content/css/hover-min.css" rel="stylesheet" />
+  <link href="~/Content/css/bootstrap.min.css" rel="stylesheet">
+  <link href="~/Content/css/owl.carousel.min.css" rel="stylesheet">
+  <link href="~/Content/css/aos.css" rel="stylesheet">
+  <link href="~/Content/css/style.css" rel="stylesheet">
+ <link href="~/Content/assets/vendor/icofont/icofont.min.css" rel="stylesheet"> 
+ <link href="~/Content/Bootstrap3/css/bootstrap.min.css" rel="stylesheet">
+ <script src="~/Content/Bootstrap3/js/jquery.js"></script>
+    <script src="~/Content/js/jquery.js"></script>
+ <script src="~/Content/Bootstrap3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   
+    <script>
+        $(document).ready(function () {
+            $("img").click(function () {
+                var a = $(this).attr("src");
+                var b = $("#m1").attr("src");
+                $("#m1").attr("src", a);
+                $(this).attr("src", b);
+            })
+        })
+
+
+</script>
+
+</head>
+<body>
+<header id="header" class="fixed-top">
+<div class="container d-flex" id="menu">
+<h1 class="logo mr-auto"><a href="/Home/Index"><img src="~/Content/images/logo.png" style="margin-top:10px;"/></a></h1>
+<nav class="nav-menu d-none d-lg-block ">
+<ul>
+<li><a href="/Home/Index"><span style="color:white;font-size:19px;background:black;"><span style="color:red;">H</span>ome </span></a></li>
+<li class="drop-down"><a href="#"><span style="color:white;font-size:19px;background:black;"><span style="color:red;">O</span>ur <span style="color:red">S</span>ervice</span></a>
+<ul>
+    <li><a href="/Home/MyOrder"><span style="color:white;font-size:19px;background:black;"><span style="color:red;">M</span>y <span style="color:red;">O</span>rders </span></a></li> 
+
+<li><a href="/Home/OrderCancellation"><span style="color:white;font-size:19px;background:black;"><span style="color:red;">O</span><span>rder </span><span style="color:red;">C</span><span>ancellation</span></span></a></li> 
+
+<li><a href="/Home/ReturnOrder"><span style="color:white;font-size:19px;background:black;"><span style="color:red;">R</span><span>eturn </span><span style="color:red;">O</span><span>rder</span></span></a></li> 
+
+<li><a href="/Home/OrderComplaint"><span style="color:white;font-size:19px;background:black;"><span style="color:red;">O</span><span>rder </span><span style="color:red;">C</span><span>omplaint</span></span></a></li> 
+</ul>
+</li>
+<li><a href="/Home/Registration"><span style="color:white;font-size:19px;background:black;"><span style="color:red;">R</span>egistration</span></a></li>
+<li><a href="/Home/Imagegallery"><span style="color:white;font-size:19px;background:black;"><span style="color:red;">I</span>mage <span style="color:red;">G</span>allery</span></a></li>
+<li><a href="/Home/Notification"><span style="color:white;font-size:19px;background:black;"><span style="color:red;">N</span>otification</span></a></li>
+<li><a href="/Home/Contect"><span style="color:white;font-size:19px;background:black;"><span style="color:red;">C</span>ontect <span style="color:red;">U</span>s</span></a></li>
+
+<li ><a href="/Home/LogIn"><span style="color:white;font-size:19px;background:black;"><span style="color:red;">L</span>og <span style="color:red;">I</span>n</span></a>
+</li>
+</ul>
+</nav>
+</div>
+</header>
+
+    
+
+<div class="container-fluid" style="background:#f8f8f8;">
+
+        @RenderBody()
+    </div> 
+    <footer id="footer">
+
+    <div class="footer-top"  style="background:black;">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact" >
+            <h3 style="color:lightgray;">Seller India</h3>
+            <p>
+             
+              India U.P Mirzapur<br><br>
+              <strong>Phone:</strong> +91 9369316040<br>
+              <strong>Email:</strong> singh360@gmail.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4 style="color:lightgray;">Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="/Home/Index">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/Home/Imagegallery">Image Gallery</a></li>
+                 <li><i class="bx bx-chevron-right"></i> <a href="/Home/LogIn">log In</a></li>
+             
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4 style="color:lightgray;">Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="/Home/MyOrder">My Orders</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/Home/Contect">Contact</a></li>
+            
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4 style="color:lightgray;">Join Us</h4>
+              <ul>
+             <li><i class="bx bx-chevron-right"></i> <a href="/Home/Registration">Register here</a></li>
+                  </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+        
+    <div class="container d-md-flex py-4" >
+      <div class="mr-md-auto text-center text-md-left">
+        <div class="copyright">
+          &copy; Copyright <strong><span>E-com</span></strong>. All Rights Reserved
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        
+      </div>
+    </div>
+  </footer>
+
+
+   <script src="~/Content/js/jquery.min.js"></script>
+  <script src="~/Content/js/jquery.waypoints.min.js"></script>
+  <script src="~/Content/js/counterup.min.js"></script>
+  <script src="~/Content/js/owl.carousel.min.js"></script>
+  <script src="~/Content/js/aos.js"></script>
+  <script src="~/Content/js/main.js"></script>
+
+
+</body>
+</html>

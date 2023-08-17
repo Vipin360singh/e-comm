@@ -1,0 +1,50 @@
+﻿@{
+    ViewBag.Title = "OrderCancellation";
+    Layout = "~/Views/Shared/HomeMasterPage.cshtml";
+}
+
+<h2 style="height:100px;">o</h2>
+
+
+
+
+<div class="row" data-aos="fade-right" style="background:black;color:white;margin:0px; border-radius:16px;box-shadow:6px 6px 3px red;">
+    <div class="col-md-12 text-center">
+<h1 ><span style="color:red">O</span>rder <span style="color:red;">C</span>ancellation <span style="color:red;">F</span>orm </h1>
+        </div>
+    <div class="col-md-2"></div>
+    <div class="col-md-8" >
+<form  style="background:black;" Action="/Home/OrderCancellation" method="post">
+  <div class="form-row">
+      <div class="form-group col-md-12">
+          <label for="inputEmail3"><span style="color:red">O</span>rder <span style="color:red;">I</span>D / <span style="color:red;">T</span>ransation <span style="color:red;">I</span>D </label>
+      <input class="form-control" name="OrderId" id="inputEmail3" placeholder="1222528743 / JSAFDH5654567AFJJ687787HHHphonepay">
+      </div>
+    
+    <div class="form-group col-md-12">
+    <label for="emailAddress"><span style="color:red">E</span>mail</label>
+    <input type="text" class="form-control" name="Email" id="emailAddress" placeholder="1234@gmail.comn">
+  </div>
+  
+  </div>
+   <div class="form-row">
+      <div class="form-group col-md-12">
+          <label for="area"><span style="color:red">R</span>eason <span style="color:red;">F</span>or <span style="color:red;">C</span>ancellation <span style="color:red;">I</span>D </label><br />
+          <textarea class="form-control" name="Reason" required placeholder="cancellation Resion ..."></textarea>
+          
+      </div>
+       </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">&nbsp;
+      <label class="form-check-label" for="gridCheck">
+        <span style="color:red;">I</span> am agree to cancel this product.
+      </label>
+    </div>
+  </div>
+  <button type="submit" class="btn" style="box-shadow:2px 2px 2px red;border:1px solid blue;background: black;color:white;"><span style="color:red">C</span>ancel <span style="color:red;">P</span>roduct</button>
+</form><br />
+        </div>
+    <div class="col-md-2"></div>
+    </div>
+<br /><br />

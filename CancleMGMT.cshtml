@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "CancleMGMT";
+    Layout = "~/Views/Shared/AdminMasterPage.cshtml";
+}
+
+
+@model List <e_comm.Content.Models.TBL_Cancle>
+
+<table class="table table-bordered" style="background:linear-gradient(white,pink)">
+    <tr>
+        <th>Order Id</th>
+        <th>Email</th>
+        <th>Reason</th>
+        
+    </tr> 
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem=>item.OrderId)</td>
+            <td>@Html.DisplayFor(modelItem=>item.Email)</td>
+            <td>@Html.DisplayFor(modelItem=>item.Reason)</td>
+        </tr>
+    }
+</table>

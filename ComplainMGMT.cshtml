@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "ComplainMGMT";
+    Layout = "~/Views/Shared/AdminMasterPage.cshtml";
+}
+
+
+@model List <e_comm.Content.Models.TBL_ComplainOrder>
+
+<table class="table table-bordered" style="background:linear-gradient(white,pink)">
+    <tr>
+        <th>Order Id</th>
+        
+        <th>Complain </th>
+        
+    </tr> 
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem=>item.OrderId)</td>
+            
+            <td>@Html.DisplayFor(modelItem=>item.Complain)</td>
+            
+        </tr>
+    }
+</table>

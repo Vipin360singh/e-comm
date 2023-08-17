@@ -1,0 +1,121 @@
+﻿@{
+    ViewBag.Title = "MyOrder";
+    Layout = "~/Views/Shared/HomeMasterPage.cshtml";
+}
+
+
+
+<h2 style="height:100px;">o</h2>
+
+<div class="row" data-aos="fade-right" style="padding:0px;margin:0px;">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        <div class="card card-stepper" style="border-radius: 16px;background:black;color:white;box-shadow:6px 6px 3px red;">
+          <div class="card-header p-4" >
+              <h1 class="text-center"><span style="color:red;">Y</span>our <span style="color:red;">O</span>rders</h1><hr style="height:3px;background:red;"/>
+            <div class="d-flex justify-content-between align-items-center">
+                
+              <div >
+                <p > Order ID - <span style="color:gray">1222528743</span></p>
+                <p > Place On - <span style="color:gray">12,March 2019</span> </p>
+              </div>
+             
+            </div>
+          </div>
+          <div class="card-body p-4" >
+            <div class="d-flex flex-row mb-4 pb-2">
+              <div class="flex-fill">
+                <h5 class="bold">Men's Shoe Bose 35 II</h5><br />
+                <p class="text-muted"> Qt: 1 item</p><br />
+                <h4 class="mb-3"> ₹ 299 <span class="small text-muted"> via (COD) </span></h4><br />
+                <p class="text-muted">Tracking Status on: <span class="text-body">11:30pm, Today</span></p>
+              </div>
+              <div>
+                <img class="align-self-center img-fluid"
+                  src="~/Content/images/gal6.jpg" width="250">
+              </div>
+            </div>
+            
+          </div>
+         
+        </div>
+       
+    
+    
+     
+<!-- Button trigger modal -->
+
+    <br />
+<button type="button" class="btn btn-lg" data-toggle="modal" style="background:black;box-shadow:1px 1px 1px red;color:white;" data-target="#order">
+  <span style="color:red;">T</span>rack <span style="color:red;">Y</span>our <span style="color:red;">O</span>rder
+</button>
+        
+    
+
+           </div>
+    <div class="col-md-2"></div>
+
+    </div> <br />
+
+
+
+<div class="modal fade" id="order" tabindex="-1" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content text-white" style="background-color: black; border-radius: 10px;border:1px solid red;box-shadow:6px 6px 3px red;">
+              <div class="modal-header border-bottom-0">
+                
+              </div>
+              <div class="modal-body text-start px-4 pt-0 pb-4">
+                <div class="text-center">
+                  <h1 class="mb-3"><span style="color:red;">O</span>rder <span style="color:red;">S</span>tatus</h1>
+                  <h5 class="mb-5">Order ID - 1222528743</h5>
+                </div>
+
+                <div class="d-flex justify-content-between mb-5">
+                  <div class="text-center">
+                    <i class="fa fa-circle" style="color:red;"></i>
+                    <p>Order placed</p>
+                  </div>
+                  <div class="text-center">
+                    <i class="fa fa-circle" style="color:red;"></i>
+                    <p>In Transit</p>
+                  </div>
+                  <div class="text-center">
+                    <i class="fa fa-circle" style="color:red;"></i>
+                    <p class="lead fw-normal">Out of Delivery</p>
+                  </div>
+                  <div class="text-center">
+                    <i class="fa fa-circle" style="color: #ed6363;"></i>
+                    <p style="color: #979595;">Delivered</p>
+                  </div>
+                </div>
+
+                <div class="row justify-content-center">
+                  <div class="col-md-4 text-center">
+                    <p class="lead fw-normal">Shipped with</p>
+                  </div>
+                  <div class="col-md-4 text-center">
+                    <p class="lead fw-normal">UPS Expedited</p>
+                  </div>
+                  <div class="col-md-2 text-center">
+                    <i class="fa fa-phone fa-lg" style="color:red;"></i>
+                  </div>
+                </div>
+
+                <div class="row justify-content-center">
+                  <div class="col-md-4 text-center">
+                    <p class="lead fw-normal">Estimated Delivery</p>
+                  </div>
+                  <div class="col-md-4 text-center">
+                    <p class="lead fw-normal">02/12/2017</p>
+                  </div>
+                  <div class="col-md-2 text-center">
+                    <i class="fa fa-envelope fa-lg" style="color:red;"></i>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>

@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "ContectMGMT";
+    Layout = "~/Views/Shared/AdminMasterPage.cshtml";
+}
+
+@model List <e_comm.Content.Models.TBL_Contact>
+
+<table class="table table-bordered" style="background:linear-gradient(white,pink)">
+    <tr>
+        <th>Name</th>
+        <th>Mobile</th>
+        <th>Email </th>
+        <th>Message</th>
+    </tr> 
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem=>item.Name)</td>
+            <td>@Html.DisplayFor(modelItem=>item.Mobile)</td>
+            <td>@Html.DisplayFor(modelItem=>item.Email)</td>
+            <td>@Html.DisplayFor(modelItem=>item.mesg)</td>
+        </tr>
+    }
+</table>
